@@ -4,6 +4,7 @@ Bem-vindo ao repositório do **Projeto Carrinho Autônomo**, desenvolvido no **L
 Este projeto consiste em um **carrinho seguidor de linha com desvio de obstáculos**, utilizando **Arduino**, sensores e programação embarcada.
 
 
+![Carrinho Autônomo](https://github.com/anallaxz/Projeto-Carrinho/raw/master/imagens/marquinhos2.jpeg)
 ---
 
 ## 📌 Funcionalidades
