@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/imagens/ruby.png" type="image/x-icon">
+  <title>Marquinhos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> Projeto Marquinhos - Carrinho</div>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#pecas">Peças</a>
+        <a href="#integrantes">Integrantes</a>
+      </nav>
+      <a class="cta" href="#demo">Ver Demo</a>
+    </div>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="hero">
+      <div class="hero-img">
+        <img src="/imagens/marquinhos2.jpeg" alt="Carrinho Autônomo">
+      </div>
+      <div class="hero-text">
+        <h1>Marquinhos</h1>
+        <p class="lead">Explore a tecnologia de veículos seguelinha com sensores inteligentes e programação embarcada.</p>
+        <div class="btns">
+          <a class="btn primary" href="#demo">Ver Demo</a>
+          <a class="btn" href="#funcionalidades">Ver Funcionalidades</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="funcionalidades">
+      <h2 class="section-title">O que ele faz</h2>
+      <div class="features">
+        <div class="card">
+          <strong>Segue linhas automaticamente</strong>
+          <p class="lead">Ajusta a rota com base nos sensores infravermelhos.</p>
+        </div>
+        <div class="card">
+          <strong>Desvia de obstáculos</strong>
+          <p class="lead">Sensor ultrassônico detecta objetos e redireciona o carrinho.</p>
+        </div>
+        <div class="card">
+          <strong>Monitoramento remoto</strong>
+          <p class="lead">Conexão Bluetooth para supervisão via app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pecas">
+      <h2 class="section-title">Componentes Utilizados</h2>
+      <div class="card">
+        <ul class="list">
+          <li>Placa Arduino Uno</li>
+          <li>Protoboard 400 pontos</li>
+          <li>4 motor DC</li>
+          <li>4  rodas</li>
+          <li>chassi de acrílico</li>
+          <li>3 sensores infravermelhos</li>
+          <li>1 sensor ultrassônico HC-SR04</li>
+          <li>2 led</li>
+          <li>2 resistores </li>
+          <li>1 buzzer</li>
+          <li>Jumpers</li>
+          <li>ponte H - L298N</li>
+          <li>2 pilhas 3,7v</li>
+          <li>1 bateria 9v</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="integrantes">
+      <h2 class="section-title">Equipe</h2>
+
+      <div class="integrante-destaque">
+        <img src="/imagens/marquinhos.jpeg" alt="Carrinho">
+        <a href="#">Marquinhos</a>
+      </div>
+
+      <div class="integrantes">
+        <div class="person"><img src="/imagens/alex.jpg" alt="Integrante"/><a href="#">Alexander</a></div>
+        <div class="person"><img src="/imagens/abreu.jpg" alt="Integrante"/><a href="#">Arthur</a></div>
+        <div class="person"><img src="/imagens/artur.jpg" alt="Integrante"/><a href="#">Artur</a></div>
+        <div class="person"><img src="/imagens/lunna.jpg" alt="Integrante"/><a href="#">Lunna</a></div>
+        <div class="person"><img src="/imagens/kamilly.jpg" alt="Integrante"/><a href="#">Kamilly</a></div>
+        <div class="person"><img src="/imagens/eduarda.jpg" alt="Integrante"/><a href="#">Eduarda</a></div>
+        <div class="person"><img src="/imagens/fafa.jpg" alt="Integrante"/><a href="#">Fafá</a></div>
+        <div class="person"><img src="/imagens/vytor.jpg" alt="Integrante"/><a href="#">Vytor</a></div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="card demo-card">
+        <div>
+          <h3>Assista ao carrinho em ação</h3>
+          <p class="lead">Clique no botão abaixo para abrir a demonstração em vídeo.</p>
+        </div>
+        <button id="openDemo" class="cta">Ver Demo</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Relâmpago • Projeto Marquinhos - Carrinho</div>
+  </footer>
+
+  <div class="modal" id="demoModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-head">
+        <strong>Demonstração do Carrinho</strong>
+        <button class="close" id="closeDemo">✕</button>
+      </div>
+      <div class="modal-body">
+        <video id="demoVideo" src="/imagens/video teste.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
